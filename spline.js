@@ -25,17 +25,17 @@
 	   		for (n=0;n<len;++n) {
 				var pt={}; 
 				var p=n/(len-1);  
-		   		pt.x=$nspline(p,nodes[prev].x,
+		   		pt.x=nspline(p,nodes[prev].x,
 							nodes[node].x,
 							nodes[next].x,
 							nodes[nextNext].x);
 
-		   		pt.y=$nspline(p,nodes[prev].y,
+		   		pt.y=nspline(p,nodes[prev].y,
 							nodes[node].y,
 							nodes[next].y,
 							nodes[nextNext].y);
 							
-		   		pt.z=$nspline(p,nodes[prev].z,
+		   		pt.z=nspline(p,nodes[prev].z,
 							nodes[node].z,
 							nodes[next].z,
 							nodes[nextNext].z);							
